@@ -2,7 +2,7 @@ public abstract class Publicacion {
 
     private int cantidadDePrestamos;
     private final String titulo;
-    private Autor autor;
+    private final Autor autor;
     private final Editorial editorial;
     private final Categoria categoria;
 

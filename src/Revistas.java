@@ -37,7 +37,7 @@ public class Revistas extends javax.swing.JFrame {
             public void actionPerformed(ActionEvent e) {
                 Revista revista = revistas.get(revistas_combo.getSelectedIndex());
                 title_info.setText(revista.getTitulo());
-                autor_info.setText(revista.getTitulo());
+                autor_info.setText(revista.getAutor().toString());
                 editorial_info.setText(revista.getEditorial().toString());
                 categoria_info.setText(revista.getCategoria().toString());
 

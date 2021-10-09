@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Clientes extends javax.swing.JFrame{
+public class Clientes extends javax.swing.JFrame {
     private JPanel panel1;
     private JComboBox comboBox1;
     private JComboBox comboBox2;

@@ -36,7 +36,7 @@ public class Libros extends javax.swing.JFrame {
             public void actionPerformed(ActionEvent e) {
                 Libro libro = libros.get(libros_combo.getSelectedIndex());
                 title_info.setText(libro.getTitulo());
-                autor_info.setText(libro.getTitulo());
+                autor_info.setText(libro.getAutor().toString());
                 editorial_info.setText(libro.getEditorial().toString());
                 categoria_info.setText(libro.getCategoria().toString());
 
