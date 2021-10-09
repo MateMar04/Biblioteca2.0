@@ -7,12 +7,10 @@ public class Principal extends javax.swing.JFrame {
     private JPanel panel1;
     private JButton librosButton;
     private JButton revistasButton;
-    private JLabel cant_publicaciones_title;
-    private JLabel cant_libros_title;
-    private JLabel cant_revistas_title;
     private JLabel cant_publicaciones_num;
     private JLabel cant_libros_num;
     private JLabel cant_revistas_num;
+    private JButton clientesButton;
 
     public Principal(Biblioteca bib) {
         setTitle("Biblioteca");
@@ -41,6 +39,14 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
+        clientesButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+
+                new Clientes(bib).setVisible(true);
+            }
+        });
     }
 
 }

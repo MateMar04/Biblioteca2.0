@@ -13,8 +13,8 @@ public class main {
         Direccion d1 = new Direccion("Loncoche", "8136", b1);
         Direccion d2 = new Direccion("Loncoche", "8136", b2);
 
-        Cliente c1 = new Cliente("Mateo Marchisone", "12312123123", "dasddas@gmail.com", d1);
-        Cliente c2 = new Cliente("Mateo Marchisone", "12312123123", "dasddas@gmail.com", d2);
+        Cliente c1 = new Cliente("Mateo Marchisone", "3513497968", "mateo.marchisone@gmail.com", d1);
+        Cliente c2 = new Cliente("Elvio Marchisone", "12312123123", "dasddas@gmail.com", d2);
 
         Autor a1 = new Autor("J.K Rowling");
         Autor a2 = new Autor("Steve Forbes");
