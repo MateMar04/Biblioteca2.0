@@ -18,15 +18,22 @@ public class main {
 
         Autor a1 = new Autor("J.K Rowling");
         Autor a2 = new Autor("Steve Forbes");
+        Autor a3 = new Autor("Maria Ines Falconi");
+        Autor a4 = new Autor("La Voz del Interior");
 
         Editorial ed1 = new Editorial("La Salamandra");
         Editorial ed2 = new Editorial("Forbes");
+        Editorial ed3 = new Editorial("Quipu");
+        Editorial ed4 = new Editorial("La Voz del Interior");
 
         Categoria cat1 = new Categoria("Fantasia");
         Categoria cat2 = new Categoria("Informativa");
+        Categoria cat3 = new Categoria("Aventura");
 
         Publicacion lib1 = new Libro("Harry Potter", a1, ed1, cat1);
+        Publicacion lib2 = new Libro("Caidos del Mapa", a3, ed3, cat3);
         Publicacion rev1 = new Revista("Forbes", a2, ed2, cat2);
+        Publicacion rev2 = new Revista("Rumbos", a4, ed4, cat2);
 
         Prestamo pres1 = new Prestamo("22/22/22", "13/13/13", c1);
         Prestamo pres2 = new Prestamo("22/22/22", "13/13/13", c2);
@@ -36,7 +43,9 @@ public class main {
 
         Biblioteca bib = new Biblioteca("Quade");
         bib.agregarPublicacion(lib1);
+        bib.agregarPublicacion(lib2);
         bib.agregarPublicacion(rev1);
+        bib.agregarPublicacion(rev2);
 
         bib.prestarPublicacion(pres1);
 
