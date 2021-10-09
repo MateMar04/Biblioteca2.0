@@ -5,4 +5,9 @@ public class Autor {
     public Autor(String nombreAutor) {
         this.nombre = nombreAutor;
     }
+
+    @Override
+    public String toString() {
+        return nombre;
+    }
 }

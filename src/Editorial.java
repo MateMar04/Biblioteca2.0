@@ -5,4 +5,9 @@ public class Editorial {
     public Editorial(String nombreEditorial) {
         this.nombreEditorial = nombreEditorial;
     }
+
+    @Override
+    public String toString() {
+        return nombreEditorial;
+    }
 }
