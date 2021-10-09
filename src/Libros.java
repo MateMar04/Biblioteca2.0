@@ -16,7 +16,7 @@ public class Libros extends javax.swing.JFrame {
 
     public Libros(Biblioteca bib) {
         setTitle("Libros");
-        setSize(new Dimension(300, 300));
+        setSize(new Dimension(600, 300));
         setResizable(false);
         add(panel1);
 

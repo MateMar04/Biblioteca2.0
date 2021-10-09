@@ -14,7 +14,7 @@ public class Principal extends javax.swing.JFrame {
 
     public Principal(Biblioteca bib) {
         setTitle("Biblioteca");
-        setSize(new Dimension(300, 300));
+        setSize(new Dimension(600, 300));
         setResizable(false);
         add(panel1);
 

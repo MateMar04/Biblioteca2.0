@@ -11,9 +11,6 @@ public class Localidad {
 
     @Override
     public String toString() {
-        return "Localidad{" +
-                "nombreLocalidad='" + nombreLocalidad + '\'' +
-                ", provincia=" + provincia +
-                '}';
+        return provincia + ", " + nombreLocalidad;
     }
 }

@@ -15,8 +15,8 @@ public class Revistas extends javax.swing.JFrame {
 
 
     public Revistas(Biblioteca bib) {
-        setTitle("Libros");
-        setSize(new Dimension(300, 300));
+        setTitle("Revistas");
+        setSize(new Dimension(600, 300));
         setResizable(false);
         add(panel1);
 

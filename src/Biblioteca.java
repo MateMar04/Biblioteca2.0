@@ -6,6 +6,7 @@ public class Biblioteca {
     private final ArrayList<Publicacion> listaDePublicaciones;
     private final ArrayList<Prestamo> listaDePrestamos;
     private final String nombreBiblioteca;
+    private final ArrayList<Cliente> clientes = new ArrayList<>();
 
 
     public Biblioteca(String nombreBiblioteca) {
@@ -13,6 +14,14 @@ public class Biblioteca {
         this.nombreBiblioteca = nombreBiblioteca;
         listaDePublicaciones = new ArrayList<>();
         listaDePrestamos = new ArrayList<>();
+    }
+
+    public void agregarCliente(Cliente cliente) {
+        clientes.add(cliente);
+    }
+
+    public List<Cliente> getClientes() {
+        return clientes;
     }
 
     public void agregarPublicacion(Publicacion publicacion) {

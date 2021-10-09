@@ -47,6 +47,9 @@ public class main {
         bib.agregarPublicacion(rev1);
         bib.agregarPublicacion(rev2);
 
+        bib.agregarCliente(c1);
+        bib.agregarCliente(c2);
+
         bib.prestarPublicacion(pres1);
 
         System.out.println("Cantidad de Prestamos: " + bib.cantidadDePrestamos());

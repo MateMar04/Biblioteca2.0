@@ -16,6 +16,18 @@ public class Cliente {
         return direccion;
     }
 
+    public String getNombre() {
+        return nombreCliente;
+    }
+
+    public String getNumeroDeTelefono() {
+        return numeroDeTelefono;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
     @Override
     public String toString() {
         return "Cliente{" +
