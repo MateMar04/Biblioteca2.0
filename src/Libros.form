@@ -56,7 +56,7 @@
                   <text value="Titulo:"/>
                 </properties>
               </component>
-              <component id="8fc18" class="javax.swing.JLabel">
+              <component id="8fc18" class="javax.swing.JLabel" binding="title_info">
                 <constraints>
                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -72,7 +72,7 @@
                   <text value="Autor"/>
                 </properties>
               </component>
-              <component id="d334c" class="javax.swing.JLabel">
+              <component id="d334c" class="javax.swing.JLabel" binding="autor_info">
                 <constraints>
                   <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -88,7 +88,7 @@
                   <text value="Editorial"/>
                 </properties>
               </component>
-              <component id="76676" class="javax.swing.JLabel">
+              <component id="76676" class="javax.swing.JLabel" binding="editorial_info">
                 <constraints>
                   <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
@@ -104,7 +104,7 @@
                   <text value="Categoria"/>
                 </properties>
               </component>
-              <component id="f2e86" class="javax.swing.JLabel">
+              <component id="f2e86" class="javax.swing.JLabel" binding="categoria_info">
                 <constraints>
                   <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
