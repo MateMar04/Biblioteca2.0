@@ -37,9 +37,11 @@ public class main {
 
         Prestamo pres1 = new Prestamo("22/22/22", "13/13/13", c1);
         Prestamo pres2 = new Prestamo("22/22/22", "13/13/13", c2);
+        Prestamo pres3 = new Prestamo("11/11/11", "12/12/12", c1);
 
         pres1.agregar(lib1);
         pres2.agregar(rev1);
+        pres3.agregar(rev2);
 
         Biblioteca bib = new Biblioteca("Quade");
         bib.agregarPublicacion(lib1);
@@ -51,6 +53,8 @@ public class main {
         bib.agregarCliente(c2);
 
         bib.prestarPublicacion(pres1);
+        bib.prestarPublicacion(pres2);
+        bib.prestarPublicacion(pres3);
 
         System.out.println("Cantidad de Prestamos: " + bib.cantidadDePrestamos());
         System.out.println("Cantidad de Libros: " + bib.cantLibros());

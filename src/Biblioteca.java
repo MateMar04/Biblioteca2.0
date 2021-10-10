@@ -3,8 +3,8 @@ import java.util.List;
 
 public class Biblioteca {
 
-    private final ArrayList<Publicacion> listaDePublicaciones;
-    private final ArrayList<Prestamo> listaDePrestamos;
+    private final ArrayList<Publicacion> publicaciones;
+    private final ArrayList<Prestamo> prestamos;
     private final String nombreBiblioteca;
     private final ArrayList<Cliente> clientes = new ArrayList<>();
 
@@ -12,8 +12,8 @@ public class Biblioteca {
     public Biblioteca(String nombreBiblioteca) {
 
         this.nombreBiblioteca = nombreBiblioteca;
-        listaDePublicaciones = new ArrayList<>();
-        listaDePrestamos = new ArrayList<>();
+        publicaciones = new ArrayList<>();
+        prestamos = new ArrayList<>();
     }
 
     public void agregarCliente(Cliente cliente) {
@@ -24,13 +24,17 @@ public class Biblioteca {
         return clientes;
     }
 
+    public List<Prestamo> getPrestamos() {
+        return prestamos;
+    }
+
     public void agregarPublicacion(Publicacion publicacion) {
-        listaDePublicaciones.add(publicacion);
+        publicaciones.add(publicacion);
     }
 
     public List<Libro> getLibros() {
         List<Libro> libros = new ArrayList<>();
-        for (Publicacion publicacion : listaDePublicaciones) {
+        for (Publicacion publicacion : publicaciones) {
             if (publicacion instanceof Libro) {
                 libros.add((Libro) publicacion);
             }
@@ -40,7 +44,7 @@ public class Biblioteca {
 
     public List<Revista> getRevistas() {
         List<Revista> revistas = new ArrayList<>();
-        for (Publicacion publicacion : listaDePublicaciones) {
+        for (Publicacion publicacion : publicaciones) {
             if (publicacion instanceof Revista) {
                 revistas.add((Revista) publicacion);
             }
@@ -49,15 +53,15 @@ public class Biblioteca {
     }
 
     public void prestarPublicacion(Prestamo prestamo) {
-        listaDePrestamos.add(prestamo);
+        prestamos.add(prestamo);
     }
 
     public int cantidadDePrestamos() {
-        return listaDePrestamos.size();
+        return prestamos.size();
     }
 
     public int cantidadDePublicaciones() {
-        return listaDePublicaciones.size();
+        return publicaciones.size();
     }
 
     public int cantLibros() {
@@ -69,16 +73,16 @@ public class Biblioteca {
     }
 
     public List<Publicacion> listarPublicaciones() {
-        return listaDePublicaciones;
+        return publicaciones;
     }
 
     public List<Prestamo> listarPrestamos() {
-        return listaDePrestamos;
+        return prestamos;
     }
 
     public List<Cliente> clientesConPrestamoDeLibro() {
         List<Cliente> clientes = new ArrayList<>();
-        for (Prestamo prestamo : listaDePrestamos) {
+        for (Prestamo prestamo : prestamos) {
             for (Publicacion publicacion : prestamo.getPublicaciones()) {
                 if (publicacion instanceof Libro) {
                     clientes.add(prestamo.getCliente());
@@ -91,7 +95,7 @@ public class Biblioteca {
 
     public List<Barrio> listarBarriosConPrestamos() {
         List<Barrio> barrios = new ArrayList<>();
-        for (Prestamo prestamo : listaDePrestamos) {
+        for (Prestamo prestamo : prestamos) {
             barrios.add(prestamo.getCliente().getDireccion().getBarrio());
         }
         return barrios;

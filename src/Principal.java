@@ -27,7 +27,7 @@ public class Principal extends javax.swing.JFrame {
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
 
-                new Libros(bib).setVisible(true);
+                new Libros(bib, null).setVisible(true);
             }
         });
         revistasButton.addMouseListener(new MouseAdapter() {
@@ -35,7 +35,7 @@ public class Principal extends javax.swing.JFrame {
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
 
-                new Revistas(bib).setVisible(true);
+                new Revistas(bib, null).setVisible(true);
             }
         });
 
